@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Agriculture Using ML & IOT</title>
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="/contact">Contact</a> 
+        </nav>
+        <h1>Precision Agriculture Using Machine Learning</h1>
+    </header>
+     
+    <main>
+        <section class="hero">
+            <img src="static/images/hero-image.jpg" alt="Precision Agriculture">
+            <h2>Improving Agriculture, Improving Lives.</h2>
+            <p>Smart Crop Recommendations to Boost Farmers' Profits!</p>
+        </section>
+         
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="static/images/crop.jpeg" alt="Precision Agriculture">
+                <p>We utilize the latest in machine and deep learning to help in your farming. Our smart algorithms can indeed analyze, optimize, and increase crop yields, always ensuring healthy plants and a great harvest.</p>
+            </div>
+        </section>
+         
+        <section id ="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="static/images/crop-icon.jpg" alt="Crop">
+                    <h3>Crop Recommendation</h3>
+                    <p>Recommendations about the type of crops to be cultivated which is best suited for the respective region.</p>
+                    <a href="/crop" class="btn">Crop Recommender</a>
+                </div>
+                <div class="service-card">
+                    <img src="static/images/fertilizer-icon.jpg" alt="Fertilizer">
+                    <h3>Yield Prediction</h3>
+                    <p>Predict the yield of crops based on the soil and weather conditions.</p>
+                    <a href="/yield" class="btn">Yield Predictor</a>
+                </div>
+            </div>
+        </section>
+    </main>
+     
+    <footer>
+        <p>&copy; 2024 Precision Agriculture Using Machine Learning. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

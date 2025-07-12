@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crop Yield Prediction</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      .bg-dark-light {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .form-control-dark {
+        background-color: #333;
+        border: 1px solid #666;
+        color: white;
+      }
+      .text-info {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center text-dark mb-4">Crop Yield Prediction</h1>
+      <div class="card bg-dark-light text-white border-0 shadow-lg">
+        <div class="card-body">
+          <h2 class="text-center text-white mb-4">Input Features</h2>
+          <form
+            action="{{ url_for('yield_prediction_app.predict') }}"
+            method="post"
+          >
+            <div class="row g-3">
+              <!-- Crop -->
+              <div class="col-md-6">
+                <label for="crop" class="form-label">Crop 
+                  <p style="color: white;">(e.g. Rice, Wheat, etc.)</p>
+                </label>
+                <input
+                  type="text"
+                  class="form-control form-control-dark"
+                  name="crop"
+                  required
+                />
+              </div>
+              <!-- Crop Year -->
+              <div class="col-md-6">
+                <label for="crop_year" class="form-label">Crop Year
+                  <p style="color: white;">(e.g. 2023, 1990, etc.)</p>
+                </label>
+                <input
+                  type="number"
+                  class="form-control form-control-dark"
+                  name="crop_year"
+                  required
+                />
+              </div>
+              <!-- Annual Rainfall -->
+              <div class="col-md-6">
+                <label for="annual_rainfall" class="form-label"
+                  >Annual Rainfall (mm/year)
+                  <p style="color: white;">(e.g. 1000, 2000, etc.)</p>
+                  </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control form-control-dark"
+                  name="annual_rainfall"
+                  required
+                />
+              </div>
+              <!-- Pesticide -->
+              <div class="col-md-6">
+                <label for="pesticide" class="form-label"
+                  >Pesticide (tonnes)
+                  <p style="color: white;">(e.g. 100, 20, etc.)</p>
+                  </label
+                >
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control form-control-dark"
+                  name="pesticide"
+                  required
+                />
+              </div>
+              <!-- Fertilizer -->
+              <div class="col-md-6">
+                <label for="fertilizer" class="form-label"
+                  >Fertilizer (tonnes)
+                  <p style="color: white;">(e.g. 100, 20, etc.)</p></label
+                >
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control form-control-dark"
+                  name="fertilizer"
+                  required
+                />
+              </div>
+              <!-- Area -->
+              <div class="col-md-6">
+                <label for="area" class="form-label">Area
+                  <p style="color: white;">(e.g. 100, 20, etc.)</p>
+                </label>
+                <input
+                  type="text"
+                  class="form-control form-control-dark"
+                  name="area"
+                  required
+                />
+              </div>
+              <!-- State -->
+              <div class="col-md-6">
+                <label for="state" class="form-label">State
+                  <p style="color: white;">(e.g. Assam, Madhya Pradesh, etc.)</p>
+                </label>
+                <input
+                  type="text"
+                  class="form-control form-control-dark"
+                  name="state"
+                  required
+                />
+              </div>
+              <!-- Season -->
+              <div class="col-md-6">
+                <label for="season" class="form-label">Season
+                  <p style="color: white;">(e.g. Kharif, Rabi, Whole Year, Summer, Winter, Autumn)</p>
+                </label>
+                <input
+                  type="text"
+                  class="form-control form-control-dark"
+                  name="season"
+                  required
+                />
+              </div>
+              <!-- Submit Button -->
+              <div class="col-12">
+                <button type="submit" class="btn btn-danger btn-lg mt-3 w-100">
+                  Predict
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Prediction Result -->
+          {% if prediction %}
+          <div class="text-center mt-4">
+            <h2>Predicted Yield:</h2>
+            <h3 class="text-info">{{ prediction }}</h3>
+          </div>
+          {% endif %}
+
+          <!-- Error Message -->
+          {% if error %}
+          <div class="text-center mt-4">
+            <h3 class="text-danger">{{ error }}</h3>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      <a href="/" style="display: block; text-align: center; margin-top: 20px"
+        >Go Back</a
+      >
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
