@@ -2,12 +2,12 @@
 
 > A web-based machine learning application that recommends suitable crops and predicts crop yield using agricultural datasets through an intuitive Flask interface.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-success)
-![GitHub](https://img.shields.io/badge/GitHub-Version%20Controlled-181717?logo=github)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-22C55E?style=for-the-badge)
 
 ---
 
@@ -55,7 +55,7 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 
 ### 🏠 Home Page
 
-<img src="./screenshots/home.png" alt="Home Page" width="900">
+<img src="./Screenshots/home.png" alt="Home Page" width="900">
 
 ---
 
@@ -63,15 +63,15 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 
 **Input Form**
 
-<img src="./screenshots/crop_prediction_input1.png" alt="Crop Recommendation Input" width="900">
+<img src="./Screenshots/crop_prediction_input1.png" alt="Crop Recommendation Input" width="900">
 
 **Additional Input Parameters**
 
-<img src="./screenshots/crop_prediction_input2.png" alt="Crop Recommendation Additional Inputs" width="900">
+<img src="./Screenshots/crop_prediction_input2.png" alt="Crop Recommendation Additional Inputs" width="900">
 
 **Prediction Result**
 
-<img src="./screenshots/crop_prediction_result.png" alt="Crop Recommendation Result" width="900">
+<img src="./Screenshots/crop_prediction_result.png" alt="Crop Recommendation Result" width="900">
 
 ---
 
@@ -79,17 +79,17 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 
 **Input Form**
 
-<img src="./screenshots/yield_prediction_input.png" alt="Yield Prediction Input" width="900">
+<img src="./Screenshots/yield_prediction_input.png" alt="Yield Prediction Input" width="900">
 
 **Prediction Result**
 
-<img src="./screenshots/yield_prediction_result.png" alt="Yield Prediction Result" width="900">
+<img src="./Screenshots/yield_prediction_result.png" alt="Yield Prediction Result" width="900">
 
 ---
 
 ### 🛎️ Services
 
-<img src="./screenshots/services.png" alt="Services Page" width="900">
+<img src="./Screenshots/services.png" alt="Services Page" width="900">
 
 ---
 
@@ -105,6 +105,18 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 | **Model Serialization** | Pickle |
 | **Development Tools** | Jupyter Notebook, VS Code |
 | **Version Control** | Git & GitHub |
+
+---
+## 📌 Key Highlights
+
+- ✅ Machine Learning based prediction system
+- ✅ Flask web application
+- ✅ Crop Recommendation module
+- ✅ Crop Yield Prediction module
+- ✅ Interactive user interface
+- ✅ Agricultural dataset preprocessing
+- ✅ Team-based software development
+- ✅ Comprehensive technical documentation
 
 ---
 
@@ -164,6 +176,17 @@ precision-agriculture-ml/
 | [`templates/`](./templates) | HTML templates |
 | [`static/`](./static) | Static assets (CSS, JavaScript, Images) |
 | [`screenshots/`](./screenshots) | Application screenshots |
+
+---
+## 🎯 Project Objectives
+
+The primary objectives of this project are:
+
+- Develop a web-based application for precision agriculture.
+- Recommend suitable crops using machine learning techniques.
+- Predict crop yield based on agricultural parameters.
+- Demonstrate the practical application of machine learning in agriculture.
+- Provide an intuitive interface for interacting with predictive models.
 
 ---
 
@@ -269,14 +292,57 @@ The application follows a structured machine learning pipeline to generate predi
 ---
 ## 🔮 Future Improvements
 
-The following enhancements can further improve the functionality and usability of the application:
+The following enhancements can further improve the functionality, accuracy, and usability of the application:
 
-- 🌦️ Integrate real-time weather data through external APIs.
-- 📡 Incorporate IoT-based sensors for live soil and environmental monitoring.
-- 📱 Develop a mobile application for easier accessibility.
-- ☁️ Deploy the application on a cloud platform for public access.
-- 📈 Improve prediction accuracy using larger and more diverse agricultural datasets.
-- 🤖 Experiment with advanced machine learning and deep learning models.
-- 🌍 Extend support for multiple crops, regions, and languages.
+- 🌦️ Integrate real-time weather APIs, IoT sensors, and satellite imagery for dynamic crop recommendations based on live soil, weather, and environmental conditions.
+- 🦠 Add pest and disease prediction modules with preventive recommendations using weather patterns and historical agricultural data.
+- 🌱 Provide personalized fertilizer and irrigation recommendations tailored to specific crop and soil conditions.
+- 📱 Develop a mobile application and ☁️ deploy the system on cloud platforms to improve accessibility, scalability, and public availability.
+- 📈 Enhance prediction accuracy by incorporating larger, more diverse datasets collected from agricultural agencies, research institutions, and government sources.
+- 🤖 Continuously improve the machine learning pipeline by experimenting with advanced ML and deep learning models.
+- 🌍 Expand support for multiple crops, regions, farming practices, and regional languages to make the system more inclusive and practical.
+
+---
+## 👥 Team & My Contribution
+
+This project was developed as part of a **5-member university team**.
+
+### My Contribution
+
+My primary responsibilities included:
+
+- 🤖 Assisted in training and evaluating machine learning models.
+- 📚 Conducted technical research and literature review related to precision agriculture and machine learning.
+- 📄 Prepared the complete project documentation and technical report.
+- 📝 Contributed to the research paper preparation and documentation.
+- 🤝 Collaborated with team members during project integration, testing, and final deployment.
+
+Working on this project strengthened my understanding of Flask, machine learning workflows, collaborative software development, and technical documentation.
+
+---
+## 🙏 Acknowledgements
+
+This project was developed as part of a university academic project.
+
+The application was built by studying existing machine learning implementations, understanding their architecture, and extending them by integrating crop recommendation and crop yield prediction into a unified Flask-based application. The project was further customized, updated, and adapted to meet the academic objectives and improve compatibility with modern Python libraries.
+
+Special thanks to our faculty mentors and team members for their guidance and collaboration throughout the project.
+
+---
+## 📚 References
+
+The project was developed using concepts from machine learning, Flask development, and agricultural datasets. Helpful resources include:
+
+- Scikit-learn Documentation
+- Flask Documentation
+- Pandas Documentation
+- NumPy Documentation
+
+---
+## 📜 License
+
+This repository is shared for educational and learning purposes.
+
+If you use this project for academic work or further development, appropriate credit to the original contributors is appreciated.
 
 ---
