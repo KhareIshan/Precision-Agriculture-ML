@@ -55,7 +55,12 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 
 ### 🏠 Home Page
 
-<img src="./Screenshots/home.png" alt="Home Page" width="900">
+<img src="./screenshots/home.png" alt="Home Page" width="900">
+
+---
+### 🛎️ Services
+
+<img src="./screenshots/services.png" alt="Services Page" width="900">
 
 ---
 
@@ -63,15 +68,15 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 
 **Input Form**
 
-<img src="./Screenshots/crop_prediction_input1.png" alt="Crop Recommendation Input" width="900">
+<img src="./screenshots/crop_prediction_input1.png" alt="Crop Recommendation Input" width="900">
 
 **Additional Input Parameters**
 
-<img src="./Screenshots/crop_prediction_input2.png" alt="Crop Recommendation Additional Inputs" width="900">
+<img src="./screenshots/crop_prediction_input2.png" alt="Crop Recommendation Additional Inputs" width="900">
 
 **Prediction Result**
 
-<img src="./Screenshots/crop_prediction_result.png" alt="Crop Recommendation Result" width="900">
+<img src="./screenshots/crop_prediction_result.png" alt="Crop Recommendation Result" width="900">
 
 ---
 
@@ -79,19 +84,14 @@ Recommends the most suitable crop based on soil nutrients and environmental cond
 
 **Input Form**
 
-<img src="./Screenshots/yield_prediction_input.png" alt="Yield Prediction Input" width="900">
+<img src="./screenshots/yield_prediction_input.png" alt="Yield Prediction Input" width="900">
 
 **Prediction Result**
 
-<img src="./Screenshots/yield_prediction_result.png" alt="Yield Prediction Result" width="900">
+<img src="./screenshots/yield_prediction_result.png" alt="Yield Prediction Result" width="900">
 
 ---
 
-### 🛎️ Services
-
-<img src="./Screenshots/services.png" alt="Services Page" width="900">
-
----
 
 ## 🛠️ Tech Stack
 
